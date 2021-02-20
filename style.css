@@ -1,0 +1,44 @@
+:root {
+  --primary: #ff4f59;
+  --primary-100: #ff9ca1;
+  --secondary: #80282c;
+}
+
+body {
+}
+
+.text-bg-primary {
+  color: var(--primary);
+}
+
+.text-bg-secondary {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.-z-1 {
+  z-index: -1;
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.vertical-stripes {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--primary),
+    transparent 1px 16px
+  );
+}
+
+.horizontal-stripes {
+  background: repeating-linear-gradient(
+    180deg,
+    var(--primary),
+    transparent 1px 16px
+  );
+}
