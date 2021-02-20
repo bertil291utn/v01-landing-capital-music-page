@@ -3,9 +3,11 @@
   --primary: #ff4f59;
   --primary-100: #ff9ca1;
   --secondary: #80282c;
+  --secondary-100: #804e50;
 }
 
 body {
+  font-size: 18px;
 }
 
 .font-serif {
@@ -20,8 +22,16 @@ body {
   color: var(--primary);
 }
 
+.text-bg-primary-100 {
+  color: var(--primary-100);
+}
+
 .text-bg-secondary {
   color: var(--secondary);
+}
+
+.text-bg-secondary-100 {
+  color: var(--secondary-100);
 }
 
 .bg-primary {
@@ -31,8 +41,6 @@ body {
 .bg-primary-100 {
   background-color: var(--primary-100);
 }
-
-
 
 .-z-1 {
   z-index: -1;
@@ -46,11 +54,11 @@ body {
   border-color: var(--secondary);
 }
 
-.shadow-primary{
+.shadow-primary {
   box-shadow: 0.3rem 0.3rem var(--primary);
 }
 
-.shadow-secondary{
+.shadow-secondary {
   box-shadow: 0.3rem 0.3rem var(--secondary);
 }
 
