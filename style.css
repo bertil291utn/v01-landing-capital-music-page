@@ -28,12 +28,30 @@ body {
   background-color: var(--primary);
 }
 
+.bg-primary-100 {
+  background-color: var(--primary-100);
+}
+
+
+
 .-z-1 {
   z-index: -1;
 }
 
 .border-primary {
   border-color: var(--primary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.shadow-primary{
+  box-shadow: 0.3rem 0.3rem var(--primary);
+}
+
+.shadow-secondary{
+  box-shadow: 0.3rem 0.3rem var(--secondary);
 }
 
 .vertical-stripes {
