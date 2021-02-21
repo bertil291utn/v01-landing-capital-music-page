@@ -46,6 +46,10 @@ body {
   background-color: var(--secondary);
 }
 
+.bg-secondary-100 {
+  background-color: var(--secondary-100);
+}
+
 .-z-1 {
   z-index: -1;
 }
