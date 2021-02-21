@@ -56,13 +56,13 @@
         <a href="#form" rel="noopener noreferrer"
           class="block px-3 sm:px-8 bg-primary-100 hover:bg-red-50 text-gray-800 py-4 border border-secondary shadow-secondary text-center w-full md:w-3/5 mx-auto">
           <!-- large screens -->
-          <span class="hidden xs:block text-bg-secondary font-black uppercase">Obt&eacute;n 6 meses de descuento</span> 
+          <span class="hidden xs:block text-bg-secondary font-black uppercase">Obt&eacute;n 6 meses de descuento</span>
           <!-- small screens -->
           <span class="block xs:hidden text-bg-secondary font-black uppercase">6 meses gratis</span>
         </a>
       </section>
       <span class="block text-bg-secondary text-center font-bold text-4xl tracking-widest">***</span>
-      
+
     </article>
 
     <!-- HOT IT WORKS? -->
@@ -129,21 +129,23 @@
       <p class="font-black text-2xl mb-3">Agile retrospectives made easy</p>
       <p>An online retrospective tool that will keep your meetings fun, focused, and productive.</p>
       <p class="py-5"><span class="font-black">Get 2 months free</span> when you join our newsletter.</p>
-      <form
+      <form id="free-months"
         action="https://garagegroup.us15.list-manage.com/subscribe/post?u=eac342dce23dc77acc5c4ba18&amp;id=81c7081437"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
         novalidate>
-
-        <input class="border border-secondary mr-3 text-gray-800 bg-white p-4 w-full md:w-3/4"
-          placeholder="your@email.com" type="email" value="" name="EMAIL" id="mce-EMAIL" />
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_eac342dce23dc77acc5c4ba18_81c7081437" tabindex="-1" value="">
         </div>
+        <input class="border border-secondary mr-3 text-gray-800 bg-white p-4 w-full md:w-3/4"
+          placeholder="your@email.com" type="email" value="" name="EMAIL" id="mce-EMAIL" required />
+        <p id="error-message" class="hidden text-red-700">Verifique su email</p>
+        <p id="confirm-message" class="hidden text-green-700">Email registrado</p>
+
         <br>
         <button name="subscribe" id="mc-embedded-subscribe" type="submit"
           class="mt-5 px-3 sm:px-8 bg-primary-100 hover:bg-red-50 text-gray-800 py-4 border border-secondary shadow-secondary">
           <!-- large screens -->
-          <span class="hidden xs:block text-bg-secondary font-black uppercase">Obt&eacute;n 6 meses de descuento</span> 
+          <span class="hidden xs:block text-bg-secondary font-black uppercase">Obt&eacute;n 6 meses de descuento</span>
           <!-- small screens -->
           <span class="block xs:hidden text-bg-secondary font-black uppercase">6 meses gratis</span>
         </button>
@@ -178,5 +180,30 @@
 
 
 </body>
+<script>
+  const formDOM = document.querySelector('#free-months');
+  const errorMessage = document.querySelector('#error-message');
+  const confirmMessage = document.querySelector('#confirm-message');
+  formDOM.addEventListener('submit', (e) => {
+    if (!formDOM.checkValidity()) {
+      e.preventDefault();
+      errorMessage.classList.remove('hidden');
+      setTimeout(() => {
+        errorMessage.classList.add('hidden');
+      }, 3000);
+      return;
+    }
+    formDOM.submit();
+    formDOM.reset();
+    confirmMessage.classList.remove('hidden');
+    setTimeout(() => {
+      confirmMessage.classList.add('hidden');
+    }, 10000);
+
+
+
+  });
+
+</script>
 
 </html>
