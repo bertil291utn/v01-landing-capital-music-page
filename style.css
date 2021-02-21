@@ -85,3 +85,13 @@ body {
     transparent 1px 16px
   );
 }
+
+@media only screen and (min-width: 426px) {
+  .xs\:block {
+    display: block;
+  }
+
+  .xs\:hidden {
+    display: none;
+  }
+}
