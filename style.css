@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@900&display=swap');
+
+@font-face {
+    font-family: 'Adam CG';
+    src: url('./assets/fonts/adam.cg_pro-webfont.woff2') format('woff2'),
+         url('./assets/fonts/adam.cg_pro-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 :root {
   --primary: #ff4f59;
   --primary-100: #ff9ca1;
@@ -10,8 +19,8 @@ body {
   font-size: 18px;
 }
 
-.font-serif {
-  font-family: 'Playfair Display', serif;
+.title-font {
+  font-family: 'Adam CG';
 }
 
 .font-mono {
