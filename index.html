@@ -45,7 +45,7 @@
 
     <!-- OUR STORY -->
     <article
-      class="meet-us text-bg-secondary p-10 lg:max-w-4xl mx-auto text-center md:text-left relative -mt-24 md:-mt-48 bg-white border border-primary shadow-primary">
+      class="font-mono meet-us text-bg-secondary p-10 lg:max-w-4xl mx-auto text-center md:text-left relative -mt-24 md:-mt-48 bg-white border border-primary shadow-primary">
       <section class="md:flex items-center">
         <img src="./assets/img/our-story.png" alt="mission picture" class="col-span-3 w-full md:w-1/2">
         <div class="info-meet ml-0 my-5 md:my-0">
@@ -172,25 +172,28 @@
       <form action="https://github.us15.list-manage.com/subscribe/post?u=eac342dce23dc77acc5c4ba18&amp;id=81c7081437"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
         novalidate>
+        <!-- requerido por mailchimp -->
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_eac342dce23dc77acc5c4ba18_81c7081437" tabindex="-1" value="">
         </div>
+        <!-- email -->
         <input class="border border-secondary mr-3 text-gray-800 bg-white p-4 w-full md:w-3/4"
           placeholder="your@email.com" type="email" value="" name="EMAIL" id="mce-EMAIL" required />
+        <!-- msg de error y aceptacion -->
         <p id="error-message" class="hidden text-red-700">Verifica tu email</p>
         <p id="confirm-message" class="hidden text-green-700">Email registrado</p>
-
+        <!-- comentarios -->
         <br>
         <label for="mce-COMMENTS">Comentarios (opcional) </label>
-        <textarea placeholder="Escribe tus comentarios y sugerencias" rows="7" type="text" value="" name="COMMENTS" class="" id="mce-COMMENTS" style="heigh:0;width:100%"></textarea>
+        <textarea placeholder="Escribe tus comentarios y sugerencias" rows="7" type="text" value="" name="COMMENTS"
+          class="" id="mce-COMMENTS" style="heigh:0;width:100%"></textarea>
         <br>
+        <!-- submit button -->
         <button name="subscribe" id="mc-embedded-subscribe" type="submit"
           class="mt-5 px-3 sm:px-8 bg-primary-100 hover:bg-red-50 text-gray-800 py-4 border border-secondary shadow-secondary">
-          <!-- large screens -->
-          <span class="hidden xs:block text-bg-secondary font-black uppercase">Quiero 6 meses grateche</span>
-          <!-- small screens -->
-          <span class="block xs:hidden text-bg-secondary font-black uppercase">6 meses a vaca</span>
+          <span class="hidden xs:block text-bg-secondary font-black uppercase">enviar</span>
         </button>
+        <!-- requerido por mailchimp -->
         <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response" style="display:none"></div>
           <div class="response" id="mce-success-response" style="display:none"></div>
