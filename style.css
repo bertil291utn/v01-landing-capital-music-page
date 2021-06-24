@@ -8,10 +8,10 @@
   font-style: normal;
 }
 :root {
-  --primary: #ff4f59;
-  --primary-100: #ff9ca1;
-  --secondary: #80282c;
-  --secondary-100: #804e50;
+  --primary: #db1047;
+  --primary-100: #E15379;
+  --secondary: #5C061D;
+  --secondary-100: #5C2231;
 }
 
 body {
