@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@900&display=swap');
 
 @font-face {
-    font-family: 'Adam CG';
-    src: url('./assets/fonts/adam.cg_pro-webfont.woff2') format('woff2'),
-         url('./assets/fonts/adam.cg_pro-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Adam CG';
+  src: url('./assets/fonts/adam.cg_pro-webfont.woff2') format('woff2'),
+    url('./assets/fonts/adam.cg_pro-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 :root {
   --primary: #ff4f59;
@@ -102,5 +101,27 @@ body {
 
   .xs\:hidden {
     display: none;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+}
+
+.social-network {
+  color: var(--secondary);
+}
+
+.social-network i {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: block;
+  }
+  .social-network {
+    text-align: center;
   }
 }
