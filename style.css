@@ -125,3 +125,10 @@ body {
     text-align: center;
   }
 }
+
+.cta-button{
+  position:fixed;
+  bottom:3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
